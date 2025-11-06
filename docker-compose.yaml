@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  tf-cpu:
+    build: .
+    container_name: tf_cpu_env
+    volumes:
+      - .:/app
+    ports:
+      - "8888:8888"
